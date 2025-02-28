@@ -1,0 +1,271 @@
+html {
+    background-image: url(t25.png);
+  }
+
+body {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(180deg, #FF69BE 0%, #ffffff 100%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-banner {
+    background-color: rgb(255, 152, 221);
+    color: white;
+    padding: 5px;
+}
+
+.welcome-banner {
+    background-color: rgb(255, 152, 221);
+    color: white;
+    padding: 5px;
+}
+
+.our-service-banner {
+    background-color: rgb(255, 152, 221);
+    color: white;
+    padding: 5px;
+}
+
+h2 {
+    margin: 10px;
+    font-size: 4vh;
+    text-align: center;
+    color: #ffffff;
+}
+
+p {
+    text-align: center;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.service {
+    width: calc(30% - 20px);
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+.service img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.service h3 {
+    color: #333;
+    margin-bottom: -10px;
+}
+
+.service p {
+    color: #666;
+}
+
+.service .description {
+    max-height: 60px;
+}
+
+.service .price {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.2em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: linear-gradient(90deg, #FF69BE 0%, #FEC9E7 100%);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.about {
+    margin-top: 20px;
+}
+
+.promotion {
+    background-color: rgb(201, 25, 255);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.promotion h1 {
+    margin-top:-2px;
+    margin-bottom: -10px;
+    font-size: 5vh;
+}
+
+.promotion p {
+    font-size: 2vh;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.promotion button{
+
+        background: #f60;
+        border: 0;
+        border-radius: 8px;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-family: monospace;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 2.5;
+        outline: transparent;
+        padding: 0 1rem;
+        text-align: center;
+        text-decoration: none;
+        transition: box-shadow .2s ease-in-out;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+}
+
+.footer {
+    background: linear-gradient(180deg, #FF69BE 0%, #FEC9E7 100%);
+    color: white;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2%;
+}
+
+.logo img{
+    width:20%;
+}
+
+.logo {
+    min-width: 40px;
+    margin-top: -20px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.branch {
+    margin: 10px;
+    max-width: 21%;
+    max-height: fit-content;
+    text-align: start;
+}
+
+.branch h3 {
+    text-align: left;
+    color: white;
+}
+
+.branch-container {
+    display: flex;
+}
+
+.footer-title {
+    text-align: center;
+    margin-top: 5px;
+
+    color: white;
+    font-size: 300%;
+}
+
+.footer-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-button {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hotline {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hotline {
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+
+.hotline:not([disabled]):hover {
+    opacity: 0.8;
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}

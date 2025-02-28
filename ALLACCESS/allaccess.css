@@ -1,0 +1,59 @@
+body {
+    font-family: monospace;
+    font-size: 4vh;
+    margin: 20;
+    padding: 20;
+}
+
+h1 {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    transition: color 0.5s ease; /* Added transition for color change on hover */
+}
+
+h1:hover {
+    color: #9900ff; /* Change the color on hover */
+}
+
+.button {
+    background-color: rgb(255, 25, 151);
+    border-style: none;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    height: 60px;
+    line-height: 20px;
+    padding: 10px 16px;
+    margin: 5px;
+    position: relative;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4vh;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Added transition for button color change on hover */
+}
+
+.button:hover {
+    background-color: #d82cff;
+    color: #ffffff;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button-container {
+    position: relative;
+    animation: floatAnimation 3s infinite ease-in-out;
+}
+
+@keyframes floatAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-10px);
+    }
+}

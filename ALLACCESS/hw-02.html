@@ -1,0 +1,156 @@
+<html>
+  <head>
+    <title>REGISTRATION FORM</title>
+    <link rel="stylesheet" href="hw-02.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img class="image" src="hiiii.png" />
+      <div class="pink_banner">
+        <h1>CREATE AN ACCOUNT</h1>
+      </div>
+      <p>
+        You will receive the confirmation mail to your email address associated
+        with account.
+      </p>
+      <p>
+        <span style="color: rgb(111, 0, 255); margin-bottom: -10px"
+          ><b> Please make sure to check your incoming email from us </b>
+        </span>
+      </p>
+
+      <form>
+        <table class="create_account">
+          <tr>
+            <td>
+              <label for="email"> Email address :</label>
+            </td>
+            <td><input type="text" name="email" /><br /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="password">Password:</label>
+            </td>
+            <td>
+              <div>
+                <input class="password_input" type="password" name="password" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <div>
+                <span class="password_span">
+                  Password must be at least 8 characters, and contain both
+                  letters and numbers. Only these symbols can be used -_.@
+                </span>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="birthdate">Birthday: </label>
+            </td>
+            <td>
+              <input type="date" id="birthdate" name="birthdate" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="gender"> Gender: </label>
+            </td>
+            <td class="gender_select">
+              <input type="radio" name="gender" value="male" />
+              <span> Male </span>
+              <br />
+              <input type="radio" name="gender" value="female" />
+              <span> Female </span>
+              <br />
+              <input type="radio" name="gender" value="unselected" /><span>
+                Unselected
+              </span>
+              <br />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="confirm"> <b> Confirm Subscription </b> </label>
+            </td>
+          </tr>
+          <tr>
+            <td class="newsletter">
+              <input class="checkbox" type="checkbox" name="check" value="1" />
+              MIGNONNE newsletter<br />
+            </td>
+          </tr>
+        </table>
+        <hr />
+
+        <div class="pink_banner">
+          <h1>PUSH NOTIFICATIONS AND PRIVACY SETTINGS</h1>
+        </div>
+        <div class="push_noti">
+          <h4>MIGNONE APPLICATION AND YOUR PERSONAL DATA</h4>
+          <p>
+            MIGNONE is committed to respecting our customers' rights when
+            storing their personal data within our system. The consents below
+            will allow customers to choose whether their personal data can be
+            stored and processed in order to provide the corresponding services.
+            For the purposes of the consents below, a "push message" refers to a
+            notifications to provide customers with valuable information related
+            to our services.
+          </p>
+          <h4>CONSENT FOR MARKETING (NON-PERSONALIZED MESSAGES)</h4>
+          <p>
+            I consent to Uniqlo's use of my personal data to send me marketing
+            messages in the form of non-personalized push messages
+          </p>
+          <input type="checkbox" name="notification" value="1" /> PUSH
+          NOTIFICATION
+          <br />
+
+          <h4>CONSENT FOR MARKETING (PERSONALIZED MESSAGES)</h4>
+          <p>
+            I consent to Uniqlo's use of my personal data to send me marketing
+            messages in the form of non-personalized push messages
+          </p>
+          <input type="checkbox" name="notification" value="1" /> PUSH
+          NOTIFICATION
+          <br />
+        </div>
+
+        <hr />
+        <div class="pink_banner">
+          <h1>MEMBERSHIP AGREEMENT</h1>
+        </div>
+        <p>
+          By creating an account, you agree to MIGNONE's privacy policy and
+          terms of use.
+        </p>
+        <input type="checkbox" name="term" value="1" /> I agree to the MIGNONE's
+        TERMS OF USE and PRIVACY POLICY <br />
+        <br />
+        <table>
+          <tr>
+            <td style="min-width: 120px">
+              <a href="http://www.designstudies.vn/vi/" target="_blank">
+                TERM OF USES
+              </a>
+            </td>
+            <td>
+              <a href="http://www.designstudies.vn/vi/" target="_blank">
+                PRIVACY POLICY
+              </a>
+            </td>
+          </tr>
+        </table>
+        <br />
+        <button class="button-1" role="button">REGISTER</button>
+      </form>
+    </div>
+  </body>
+</html>

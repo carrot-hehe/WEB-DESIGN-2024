@@ -1,0 +1,71 @@
+* {
+    font-family: monospace;
+}
+
+.pink_banner {
+    background-color: rgb(255, 25, 151);
+    color: white;
+    padding: 5px;
+}
+
+.container {
+    width: 60%;
+}
+
+.password_input {
+    display: block;
+}
+
+.gender_select {
+    display: flex;
+}
+
+.gender_select span {
+    padding-top: 0.3rem;
+    padding-right: 1rem;
+}
+
+.newsletter {
+    min-width: 200px;
+}
+
+input[type='checkbox'] {
+    accent-color: rgb(255, 25, 151);
+    margin: 0;
+}
+
+input[type='radio'] {
+    accent-color: rgb(255, 25, 151);
+}
+
+.create_account td {
+    margin-bottom: 10px;
+}
+
+.push_noti h4 {
+    margin-bottom: -10px;
+}
+
+.button-1 {
+    background-color: rgb(255, 25, 151);
+    border-style: none;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    line-height: 20px;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+}
+
+.button-1:hover,
+.button-1:focus {
+    opacity: 0.6;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}

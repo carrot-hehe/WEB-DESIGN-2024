@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <title>
+            🌸 HOMEPAGE - DINH QUYNH THO
+        </title>
+        <link rel="stylesheet" href="allaccess.css" />
+        <style>
+            button.convert-button {
+                background-color: #7b00ff;
+                color: white;
+                padding: 10px 20px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+                margin-top: 20px;
+                height: 40px;
+                line-height: 20px;
+                font-family: monospace;
+                font-weight: bold;
+            }
+    
+            button.convert-button:hover {
+                background-color: #ffaffc;
+            }
+        </style>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var buttons = document.querySelectorAll('.button');
+                var moveInterval;
+                var h1Content; // To store the content of h1
+    
+                function moveButton(button) {
+                    var maxX = window.innerWidth - button.offsetWidth;
+                    var maxY = window.innerHeight - button.offsetHeight;
+    
+                    var newX = Math.floor(Math.random() * maxX);
+                    var newY = Math.floor(Math.random() * maxY);
+    
+                    button.style.position = 'absolute';
+                    button.style.left = newX + 'px';
+                    button.style.top = newY + 'px';
+                }
+    
+                function moveButtonsRandomly() {
+                    buttons.forEach(function (button) {
+                        moveButton(button);
+                    });
+                }
+    
+                function convertToOrderedList() {
+                    clearInterval(moveInterval); // Stop the random movement
+    
+                    h1Content = document.querySelector('h1').innerHTML;
+    
+                    var ol = document.createElement('ol');
+                    ol.style.listStyleType = 'none';
+                    ol.style.padding = '0';
+    
+                    buttons.forEach(function (button, index) {
+                        var li = document.createElement('li');
+                        var anchor = button.parentElement.cloneNode(true);
+                        li.appendChild(anchor);
+                        ol.appendChild(li);
+                    });
+    
+                    // Clear the existing content and append the ordered list
+                    document.body.innerHTML = '';
+                    document.body.appendChild(document.createElement('h1'));
+                    document.querySelector('h1').innerHTML = h1Content;
+                    document.body.appendChild(ol);
+                }
+    
+                // Move the buttons every 1.5 seconds
+                moveInterval = setInterval(moveButtonsRandomly, 1500);
+    
+                moveButtonsRandomly();
+    
+                // Add a button to trigger the conversion to an ordered list
+                var convertButton = document.createElement('button');
+                convertButton.innerHTML = 'STOP STOP STOP';
+                convertButton.className = 'convert-button'; 
+                convertButton.addEventListener('click', convertToOrderedList);
+                document.body.appendChild(convertButton);
+            });
+        </script>
+    </head>
+    <body>
+        <h1>
+            DINH QUYNH THO <span style="color: rgb(255, 25, 151); font-family: Georgia, 'Times New Roman', Times, serif;"> <em> /homework list/ </em> </span>
+        </h1>
+        <ul>
+            <div>
+                <a href="hw-01.html">
+                    <button class="button"> 🌸 HOMEWORK 01</button>
+                  </a>
+            </div>
+            <div>
+                <a href="hw-02.html">
+                    <button class="button"> 🌸 HOMEWORK 02</button>
+                  </a>
+            </div>
+            <div>
+                <a href="hw-03.html">
+                    <button class="button">  🌸 HOMEWORK 03</button>
+                  </a>
+            </div>
+            <div>
+                <a href="hw-04.html">
+                    <button class="button"> 🌸 HOMEWORK 04</button>
+                  </a>
+            </div>
+            <div>
+                <a href="hw-05.html">
+                    <button class="button"> 🌸 HOMEWORK 05</button>
+                  </a>
+            </div>
+            <div>
+              <a href="hw-06.html">
+                  <button class="button"> 🌸 HOMEWORK 06</button>
+                </a>
+          </div>
+        </ul>
+    </body>
+</html>

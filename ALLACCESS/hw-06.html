@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion Product</title>
+    <script src="hw-06.js" defer></script>
+    <link rel="stylesheet" href="hw-06.css" />
+    <style>
+.mySlides {display:none;}
+    </style>
+  </head>
+
+  <body>
+    <header> 
+      <div class="cover"> 
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <img class="myslides" src="Frame 8.png" alt="cover-01" />
+        <img class="myslides" src="Frame 9.png" alt="ccover-02" />
+        <img class="myslides" src="Frame 10.png" alt="cover-03" />
+        <img class="myslides" src="Frame 11.png" alt="cover-04" />
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("myslides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+    </header>
+
+    <section>
+      <div class="welcome-box"> 
+        <div class="welcome-h2" >
+          <marquee behavior="scroll" direction="left" scrollamount="20">
+            <h2> >.< WELCOME TO MAYMAMMAM >.< FREE SHIPPING FROM 200,000 >.< </h2>
+          </marquee>
+        </div>
+        <p class="fade-in">
+            Mời bạn ghé thăm gian hàng thơm nức mũi và thật nhiều tình yêu của <b> maymammam </b> ~
+        </p>
+       
+        <p class="fade-in"> 
+        Được ra đời với mong muốn mang tới sự chỉn chu và ngon miệng nhất tới khách hàng, mỗi sản phẩm
+        của <b> maymammam </b> đều được tạo ra với thật nhiều tình yêu và sự tận tâm.
+        </p>  
+        <p class="fade-in">        
+        Những điều xuất phát từ trái tim sẽ chạm đến trái tim. Đừng ngần ngại mà bỏ vào giỏ hàng mùa lễ hội này thật nhiều tình yêu thương từ chúng mình nha ~
+        </p>
+      </div>
+      <br>
+      <div class="collection-h2 fade-in" >
+        <h2> >.< 2023 FESTIVE COLLECTION >.< </h2>
+    </div>
+      <div class="services">
+        <div class="service fade-in">
+          <img src="01.png" alt="Cake 01" />
+        </div>
+
+        <div class="service fade-in">
+          <img src="02.png" alt="Flower 02" />
+        </div>
+
+        <div class="service fade-in">
+          <img src="03.png" alt="Flower 03" />
+        </div>
+
+        <div class="service fade-in">
+            <img src="04.png" alt="Flower 04" />
+        </div>
+
+        <div class="service fade-in">
+            <img src="05.png" alt="Flower 05" />
+        </div>
+
+        <div class="service fade-in">
+            <img src="06.png" alt="Flower 06" />
+        </div>
+
+        <div class="service fade-in">
+            <img src="07.png" alt="Flower 07" />
+        </div>
+  
+        <div class="service fade-in">
+            <img src="08.png" alt="Flower 08" />
+        </div>
+  
+        <div class="service fade-in">
+            <img src="09.png" alt="Flower 09" />
+        </div>
+       </div>  
+       <div class="order">
+        <h2> >.< EXCLUSIVE POSTCARD FOR 50 FIRST ORDER! >.< </h2>
+        <div class="order-img fade-in">
+          <img src="10.png">
+        </div>
+        <button> ORDER NOW </button>
+      </div>  
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <div class="social-links">
+            <a href="#"><img src="fb-icon.png" alt="Facebook" /></a>
+            <a href="#"><img src="utube-icon.png" alt="YouTube" /></a>
+            <a href="#"><img src="zalo-icon.png" alt="Zalo" /></a>
+          </div>
+        </div>
+        <div class="branch">
+          <h3>HANOI BRANCH & MAYMAMMAM OFFICE LOCATED IN HANOI</h3>
+          <div>
+            29 Lieu Giai Street, Ngoc Khanh Ward, Ba Dinh District, Hanoi
+          </div>
+          <div>DT: (84-24) 37714354</div>
+          <div>Fax: (84-24) 37714355</div>
+        </div>
+        <div class="branch">
+          <h3>DA NANG BRANCH</h3>
+          <br />
+          <div>
+            29 Lieu Giai Street, Ngoc Khanh Ward, Ba Dinh District, Danang
+          </div>
+          <div>DT: (84-24) 37714354</div>
+          <div>Fax: (84-24) 37714355</div>
+        </div>
+        <div class="branch">
+          <h3>HO CHI MINH BRANCH LOCATED IN HO CHI MINH</h3>
+          <div>
+            29 Lieu Giai Street, Ngoc Khanh Ward, Ba Dinh District, Hochiminh
+          </div>
+          <div>DT: (84-24) 37714354</div>
+          <div>Fax: (84-24) 37714355</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
